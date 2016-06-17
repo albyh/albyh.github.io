@@ -3,23 +3,94 @@
 <head>
     <meta charset="utf-8" />
     <title>portfolio</title>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Cairo|Open+Sans+Condensed:300|Raleway|Work+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/portfolio.css" rel="stylesheet" />
+
 </head>
-<body>
-    <nav>
-        <a class="about" href="/about/">About Alby</a>
-        <a class="portfolio" href="/faq/">Portfolio</a>
-        <a class="about" href="/resources/">Contact</a>
-    </nav>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+        <nav class="navbar navbar-inverse bg-primary navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home"><img class="brand" alt="Logo" src="images/logo.png"></a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#about">About Alby</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
 
-    <div class="content">
-        <section class="about">
-            <aside>
-                <h4> About </h4>
-            </aside>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="home">
+            <h1 class="terminal">Get-Content C:\Alby Heredia.txt></h1>
         </section>
-    </div>
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <h4> About </h4>
+                    </div>
+                    <div class="col-sm-5 col-sm-push-6">
+                        <img class="img-rounded photo" alt="Alby Heredia" src="images\albyoutside.jpg" />
+                    </div>
+                    <div class="col-sm-6 col-sm-pull-5">
+                        <article>
+                            <p>My initial exposure to computer development was in 1985 on a "portable" Osborne computer using dBase II running on the CP/M operating system. I used a dual floppy-drive setup to create a database for a trade school. That evolved into creating full-featured, custom dBase/Clipper apps for several trade schools and POS software for salons. Later in the mid-1990s as Windows 95 began to get traction I created a successor application in Clipper's successor, CA Visual Objects.</p>
+                            <p>I enjoy the challenge of solving complex problems and employing a fast iteration cycle to spin initial designs into fully function systems.</p>
+                            <p>Over the years I've used Autohotkey extensively to automate common tasks.</p>
+                            <p>As a State Certified real estate appraiser I've created complex spreadsheets for analysis of housing trends and for developing market support for adjustments to comparable sales using analysis of MLS data and statistical analysis using regression analysis, paired sale analysis, and qualatative measurements.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <aside>
+                <h4>Portfolio</h4>
+            </aside>
+            <a href="#project1">
+                <img class="project img-rounded" alt="Project 1" src="..\images\project1.png" />
+            </a>
+            <a href="#project1">
+                <img class="project img-rounded" alt="Project 2" src="images\project2.png" />
+            </a>
+            <a href="#project1">
+                <img class="project img-rounded" alt="Project 3" src="images\project3.png" />
+            </a>
+            <a href="#project1">
+                <img class="project img-rounded" alt="Project 4" src="images\project4.png" />
+            </a>
+        </section>
+
+
+        <section id="contact">
+            <aside>
+                <h4>Contact</h4>
+            </aside>
+            <article>
+                <p>This is contact information.</p>
+            </article>
+        </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
     <script src="js/portfolio.js"></script>
 </body>
