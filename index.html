@@ -7,84 +7,203 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arimo|Cairo|Open+Sans+Condensed:300|Raleway|Work+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/portfolio.css" rel="stylesheet" />
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-        <nav class="navbar navbar-inverse bg-primary navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#home"><img class="brand" alt="Logo" src="images/logo.png"></a>
-                </div>
-                <div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#about">About Alby</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
+    <nav class="navbar navbar-inverse bg-primary navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home"><img class="brand" alt="Logo" src="images/logo.png"></a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Alby</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
 
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
             </div>
-        </nav>
-        <section id="home">
-            <h1 class="terminal">Get-Content C:\Alby Heredia.txt></h1>
-        </section>
-        <section id="about">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-1">
-                        <h4> About </h4>
-                    </div>
-                    <div class="col-sm-5 col-sm-push-6">
-                        <img class="img-rounded photo" alt="Alby Heredia" src="images\albyoutside.jpg" />
-                    </div>
-                    <div class="col-sm-6 col-sm-pull-5">
-                        <article>
-                            <p>My initial exposure to computer development was in 1985 on a "portable" Osborne computer using dBase II running on the CP/M operating system. I used a dual floppy-drive setup to create a database for a trade school. That evolved into creating full-featured, custom dBase/Clipper apps for several trade schools and POS software for salons. Later in the mid-1990s as Windows 95 began to get traction I created a successor application in Clipper's successor, CA Visual Objects.</p>
-                            <p>I enjoy the challenge of solving complex problems and employing a fast iteration cycle to spin initial designs into fully function systems.</p>
-                            <p>Over the years I've used Autohotkey extensively to automate common tasks.</p>
-                            <p>As a State Certified real estate appraiser I've created complex spreadsheets for analysis of housing trends and for developing market support for adjustments to comparable sales using analysis of MLS data and statistical analysis using regression analysis, paired sale analysis, and qualatative measurements.</p>
-                        </article>
-                    </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container-fluid">
+            <div class="row" > 
+                <div class="col-sm-2">
+                    <h4>Home</h4>
+                </div>
+                <div id="terminal" class="col-sm-10">
+
+                    <!--<h1 class="terminal">c:\> load alby-heredia.rom</h1>
+                    <h1 class="terminal">Bootstrapping...</h1>
+                    <h1 class="terminal">Start-up Self Check... COMPLETE</h1>
+                    <h1 class="terminal">WELCOME TO Alby Heredia's Portfolio Website!</h1>
+                    <h1 class="terminal">Please select an option:</h1>
+                    <h1 class="terminal">1. Reboot</h1>
+                    <h1 class="terminal">2. About Alby</h1>
+                    <h1 class="terminal">3. Portfolio Playground</h1>
+                    <h1 class="terminal">4. Contact Alby</h1>
+                    <h1 class="terminal">><span>_</span></h1>-->
+                    <!--<h1 class="terminal"><span><strong>c:\></strong></span>Get-Content C:\Alby_Heredia</h1>-->
+
                 </div>
             </div>
-        </section>
-        <section id="portfolio">
-            <aside>
-                <h4>Portfolio</h4>
-            </aside>
-            <a href="#project1">
-                <img class="project img-rounded" alt="Project 1" src="..\images\project1.png" />
-            </a>
-            <a href="#project1">
-                <img class="project img-rounded" alt="Project 2" src="images\project2.png" />
-            </a>
-            <a href="#project1">
-                <img class="project img-rounded" alt="Project 3" src="images\project3.png" />
-            </a>
-            <a href="#project1">
-                <img class="project img-rounded" alt="Project 4" src="images\project4.png" />
-            </a>
-        </section>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4> About </h4>
+                </div>
+                <div class="col-sm-5 col-sm-push-5">
+                    <img class="img-rounded photo" alt="Alby Heredia" src="images\albyoutside.jpg" />
+                </div>
+                <div class="col-sm-5 col-sm-pull-5">
+                    <article>
+                        <p>My initial exposure to computer development was in 1985 on a "portable" Osborne computer using dBase II running on the CP/M operating system. I used a dual floppy-drive setup to create a database for a trade school. That evolved into creating full-featured, custom dBase/Clipper apps for several trade schools and POS software for salons. Later in the mid-1990s as Windows 95 began to get traction I created a successor application in Clipper's successor, CA Visual Objects.</p>
+                        <p>I enjoy the challenge of solving complex problems and employing a fast iteration cycle to spin initial designs into fully function systems.</p>
+                        <p>Over the years I've used Autohotkey extensively to automate common tasks.</p>
+                        <p>As a State Certified real estate appraiser I've created complex spreadsheets for analysis of housing trends and for developing market support for adjustments to comparable sales using analysis of MLS data and statistical analysis using regression analysis, paired sale analysis, and qualatative measurements.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>Portfolio</h4>
+                </div>
+                <div class="col-sm-10">
+                    <figure class="projectbox">
+                        <a href="#project1">
+                            <img class="project-photo img-rounded" alt="Project 1" src="images\project1.png" />
+                        </a>
+                        <h2 class="projectheader">AlbyGame</h2>
+                        <p>Description of Game Project</p>
+
+                    </figure>
+                    <figure class="projectbox">
+                        <a href="#project2">
+                            <img class="project-photo img-rounded" alt="Project 2" src="images\project2.png" />
+                        </a>
+                        <h2 class="projectheader">Appraisal</h2>
+                        <p>Created numerous real estate appraisal-related solutions using a variety of tools including Total, Excel, R, Autohotkey, and </p>
+
+                    </figure>
+                </div>
+            </div>
 
 
-        <section id="contact">
-            <aside>
-                <h4>Contact</h4>
-            </aside>
-            <article>
-                <p>This is contact information.</p>
-            </article>
-        </section>
+            <div class="row">
+                <div class="col-sm-11 col-sm-offset-2">
+                    <figure class="projectbox">
+                        <a href="#project3">
+                            <img class="project-photo img-rounded" alt="Project 3" src="images\project3.png" />
+                        </a>
+                        <h2 class="projectheader">Python Demo</h2>
+                        <p>Description of Python Project</p>
+
+                    </figure>
+                    <figure class="projectbox">
+                        <a href="#project4">
+                            <img class="project-photo img-rounded" alt="Project 4" src="images\project4.png" />
+                        </a>
+                        <h2 class="projectheader">C# Demo</h2>
+                        <p>Description of C# Demo</p>
+
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-11 col-sm-offset-2">
+                    <figure class="projectbox">
+                        <a href="#project5">
+                            <img class="project-photo img-rounded" alt="Project 5" src="images\autohotkey.png" />
+                        </a>
+                        <h2 class="projectheader">Autohotkey_L</h2>
+                        <p>Used Autohotkey scripting language to create multiple, complex scripts for automate repetitive tasks.</p>
+
+                    </figure>
+                    <figure class="projectbox">
+                        <a href="#project6">
+                            <img class="project-photo img-rounded" alt="Project 6" src="images\project4.png" />
+                        </a>
+                        <h2 class="projectheader">Wordpress</h2>
+                        <p>Created Wordpress demo website</p>
+
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-11 col-sm-offset-2">
+                    <figure class="projectbox">
+                        <a href="#project7">
+                            <img class="project-photo img-rounded" alt="Project 7" src="images\albydo.png" />
+                        </a>
+                        <h2 class="projectheader">AlbyDo</h2>
+                        <p>Drag and drop To-do demo using jQuery and jQuery UI.</p>
+
+                    </figure>
+                    <figure class="Weather">
+                        <a href="#project8">
+                            <img class="project-photo img-rounded" alt="Project 8" src="images\daweather.png" />
+                        </a>
+                        <h2 class="projectheader">daWeather</h2>
+                        <p>Completely dynamically generated JavaScript weather demo site created using API calls to OpenWeatherMap.org</p>
+
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>Contact</h4>
+                </div>
+                <div class="col-sm-10">
+                    <article>
+                        <p>Contact Alby Heredia via any of the following: </p>
+
+                        <!--<a class="btn btn-default linkedin" href="http://www.linkedin.com/in/albyh" role="button" target="_blank" data-placement="left" title="LinkedIn"><i class="fa fa-linkedin"></i></a>-->
+
+                        <div class="row social-links">
+                            <div class="col-md-2 col-sm-offset-2">
+                                <a class="btn btn-default linkedin" href="https://www.linkedin.com/in/albyh" role="button" target="_blank" data-placement="left" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                            </div>
+
+                            <div class="col-md-2">
+                                <a class="btn btn-default" href="https://github.com/albyh" role="button" target="_blank" data-placement="left" title="Github"><i class="fa fa-github-alt"></i></a>
+                            </div>
+
+                        </div>
+
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
