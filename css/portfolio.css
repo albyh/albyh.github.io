@@ -11,6 +11,7 @@
 h1 h2 h3 h4 h5 h6 {
 }
 
+
 @-webkit-keyframes typing {
     from { width: 4.5em;  }
     to { width: 22em; }
@@ -44,7 +45,6 @@ h1 {
     -webkit-animation-delay: 15s;
     -webkit-animation: typing 2s steps(20, end), blink-caret 1s step-end infinite;
     -moz-animation: typing 2s steps(20, end), blink-caret 1s step-end infinite;*/
-
 }
 
 h5 {
@@ -53,11 +53,17 @@ h5 {
     margin: 0px ;}
 
 h4 {
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 4rem;
      margin: 0px 0px 20px 0px;
 }
 
-
-
+p{
+    line-height: 2;
+    margin: 0px 0px 25px 0px;
+    font-size: 1.75rem;
+    font-family: 'Raleway', sans-serif;
+}
 
 nav {
     /*background-color: mediumpurple;*/
@@ -162,11 +168,20 @@ figure {
 }
 
 #about {
-    background-color: orchid;
+  background: lightcyan; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, blue); /* Standard syntax */
 }
 
 #portfolio {
-    background-color: fuchsia;
+  background: lightcyan; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, blue); /* Standard syntax */
+
 }
 
 #contact {
