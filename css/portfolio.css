@@ -152,6 +152,12 @@ figure {
 
 }
 
+#bp {
+    height: auto;
+    width: 200 px;
+}
+
+
 .terminal {
     padding: 0px 0px 0px 0px;
     /*width: 600px;*/
